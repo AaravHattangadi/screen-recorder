@@ -1,25 +1,29 @@
 {
   "name": "screen-recorder",
-  "productName": "screen-recorder",
+  "productName": "Screen Recorded 📷",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Screen Recorded — A Lightweight screen capture tool",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "make-linux": "electron-forge make --platform linux --targets deb"
+    
   },
   "keywords": [],
   "author": {
-    "name": "aarav123-android",
-    "email": "69454819+aarav123-android@users.noreply.github.com"
+    "name": "Aarav Hattangadi",
+    "email": "aarav@hattangadi.com"
   },
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "./assets/"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
